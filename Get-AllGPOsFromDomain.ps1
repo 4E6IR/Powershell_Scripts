@@ -23,5 +23,3 @@ foreach ($GPO in $GPOs) {
 $HTMLContent | Out-File -Encoding UTF8 $ReportPath
 
 Write-Host "Отчёт создан: $ReportPath"
-
-#

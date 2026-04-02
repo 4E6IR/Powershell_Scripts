@@ -1,0 +1,1 @@
+﻿Get-ADComputer -Filter 'OperatingSystem -like "*Server*"' -Properties OperatingSystem, CN, DNSHostName, DistinguishedName, IPv4Address | Sort-Object DNSHostName | Ft CN, DNSHostName, IPv4Address, OperatingSystem, DistinguishedName

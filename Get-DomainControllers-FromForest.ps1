@@ -1,0 +1,1 @@
+﻿(Get-ADForest).Domains | % { Get-ADDomainController -Filter * -Server $_ } | Select Domain,Name,HostName,IPv4Address,Site | Ft -AutoSize
